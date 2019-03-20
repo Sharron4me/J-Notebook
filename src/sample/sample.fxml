@@ -8,22 +8,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<?import javafx.scene.layout.VBox?>
-<AnchorPane prefHeight="629.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane prefHeight="629.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Label alignment="CENTER" layoutY="-2.0" prefHeight="78.0" prefWidth="318.0" style="-fx-background-color: #8395a7;" text="Existing Files will be displayed below">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button  text="Refresh" onAction="#refresh"/>
+      <Button onAction="#refresh" text="Refresh" />
       <ListView fx:id="filelist" layoutY="75.0" prefHeight="553.0" prefWidth="318.0" style="-fx-background-color: #34495e; -fx-text-fill: white;" />
-      <Label layoutX="370.0" layoutY="176.0" prefHeight="48.0" prefWidth="354.0" text="Create New File -">
+      <Label layoutX="370.0" layoutY="176.0" prefHeight="48.0"  prefWidth="354.0" text="Create New File -">
          <font> 
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <TextField layoutX="370.0" layoutY="244.0" prefHeight="32.0" prefWidth="258.0" promptText="Enter New File Name Here" fx:id="file_pro_name">
+      <TextField fx:id="file_pro_name" layoutX="370.0" layoutY="244.0" prefHeight="32.0" prefWidth="258.0" promptText="Enter New File Name Here">
          <font>
             <Font size="16.0" />
          </font>
@@ -31,7 +30,7 @@
             <Insets bottom="2.0" left="6.0" right="2.0" top="2.0" />
          </padding>
       </TextField>
-      <Label layoutX="638.0" layoutY="243.0" prefHeight="38.0" prefWidth="78.0" text=".java">
+      <Label layoutX="638.0" layoutY="243.0" prefHeight="38.0"  prefWidth="78.0" text=".java">
          <font>
             <Font size="22.0" />
          </font>
@@ -41,17 +40,22 @@
             <Font name="System Bold" size="19.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" layoutX="469.0" layoutY="9.0" prefHeight="58.0" prefWidth="318.0" text="Jnotebook" underline="true">
+      <Label fx:id="error_message" alignment="CENTER" layoutX="469.0" layoutY="340.0" prefHeight="58.0" prefWidth="318.0" style="-fx-text-fill: red;" text="ERROR" textAlignment="CENTER" visible="false" wrapText="true">
+         <font>
+            <Font name="sans-sherif Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="469.0" layoutY="9.0" textAlignment="CENTER"  prefHeight="58.0" prefWidth="318.0" text="Jnotebook" underline="true">
          <font>
             <Font name="System Bold" size="48.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="585.0" layoutY="396.0" prefHeight="38.0" prefWidth="86.0" style="-fx-text-fill: red;" text="OR">
+      <Label alignment="CENTER" layoutX="585.0" layoutY="396.0" textAlignment="CENTER"  prefHeight="38.0" prefWidth="86.0" style="-fx-text-fill: red;" text="OR">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="354.0" layoutY="465.0" prefHeight="38.0" prefWidth="504.0" text="Click on already existing file from the beside list">
+      <Label alignment="CENTER" layoutX="354.0" layoutY="465.0" textAlignment="CENTER"  prefHeight="38.0" prefWidth="504.0" text="Click on already existing file from the beside list">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
