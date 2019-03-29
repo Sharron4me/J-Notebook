@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1274.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.openController">
+<AnchorPane prefHeight="1078.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.openController">
    <children>
       <Label layoutX="26.0" layoutY="14.0" prefHeight="50.0" prefWidth="296.0" text="Jnotebook" underline="true">
          <font>
@@ -23,7 +23,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <TextArea layoutX="27.0" layoutY="158.0" prefHeight="122.0" prefWidth="670.0">
+      <TextArea layoutX="27.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="334.0">
          <font>
             <Font size="16.0" />
          </font>
@@ -31,12 +31,12 @@
             <Insets />
          </opaqueInsets>
       </TextArea>
-      <Label layoutX="25.0" layoutY="515.0" prefHeight="32.0" prefWidth="334.0" style="-fx-text-fill: green;" text="Write your Java Main Class Below">
+      <Label layoutX="24.0" layoutY="346.0" prefHeight="32.0" prefWidth="334.0" style="-fx-text-fill: green;" text="Write your Java Main Class Below">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <TextArea layoutX="27.0" layoutY="558.0" prefHeight="226.0" prefWidth="670.0">
+      <TextArea layoutX="27.0" layoutY="388.0" prefHeight="226.0" prefWidth="846.0">
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
@@ -44,32 +44,32 @@
             <Font size="18.0" />
          </font>
       </TextArea>
-      <Button layoutX="143.0" layoutY="820.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: yellow; -fx-text-fill: black;" text="Compile">
+      <Button layoutX="244.0" layoutY="636.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: yellow; -fx-text-fill: black;" text="Compile">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button layoutX="310.0" layoutY="820.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Run">
+      <Button layoutX="403.0" layoutY="636.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Run">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <TextArea layoutX="27.0" layoutY="340.0" prefHeight="162.0" prefWidth="670.0" />
-      <Label layoutX="26.0" layoutY="295.0" prefHeight="32.0" prefWidth="296.0" style="-fx-text-fill: green;" text="Define Classes Below">
+      <TextArea layoutX="394.0" layoutY="158.0" prefHeight="178.0" prefWidth="478.0" />
+      <Label layoutX="536.0" layoutY="110.0" prefHeight="32.0" prefWidth="296.0" style="-fx-text-fill: green;" text="Define Classes Below">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <Button layoutX="479.0" layoutY="820.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Clear Code">
+      <Button layoutX="559.0" layoutY="636.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Clear Code">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" layoutX="271.0" layoutY="916.0" prefHeight="32.0" prefWidth="174.0" text="Output" underline="true">
+      <Label alignment="CENTER" layoutX="364.0" layoutY="702.0" prefHeight="32.0" prefWidth="174.0" text="Output" underline="true">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TextArea layoutX="32.0" layoutY="956.0" prefHeight="200.0" prefWidth="670.0" />
+      <TextArea layoutX="38.0" layoutY="761.0" prefHeight="200.0" prefWidth="825.0" />
    </children>
 </AnchorPane>
