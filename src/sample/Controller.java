@@ -68,7 +68,7 @@ public class Controller {
                         Parent root1 = (Parent) fxmlLoader.load();
                         Stage stage = new Stage();
                         stage.setTitle("second page");
-                        stage.setScene(new Scene(root1));
+                        stage.setScene(new Scene(root1,900,1000));
                         stage.show();
 
                     }
