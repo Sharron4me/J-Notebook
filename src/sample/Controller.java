@@ -22,7 +22,7 @@ public class Controller {
         //dATABASE BLOCK
 
         try{
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\ADITYA\\github\\J-Notebook\\testjava1.db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\sherrinford\\Documents\\Github\\testjava.db");
             try {
                 Statement statement = conn.createStatement();
                 statement.execute("Create Table file_Name (Address VARCHAR(100),Parent_file VARCHAR(20))");
@@ -94,7 +94,7 @@ public class Controller {
 
         //dATABASE BLOCK
         try{
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\ADITYA\\github\\J-Notebook\\testjava1.db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\sherrinford\\Documents\\Github\\testjava.db");
             try {
                 Statement statement = conn.createStatement();
                 statement.execute("Create Table file_Name (Address VARCHAR(100),Parent_file VARCHAR(20))");
@@ -123,10 +123,6 @@ public class Controller {
             System.out.println("Something Went Wrong!  "+e);
         }
     }
-
-
-
-
 
 }
 
