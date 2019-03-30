@@ -1,0 +1,10 @@
+abc.java:1: error: class, interface, or enum expected
+sfsf
+^
+abc.java:5: error: not a statement
+ 	sdf 
+ 	^
+abc.java:5: error: ';' expected
+ 	sdf 
+ 	   ^
+^C

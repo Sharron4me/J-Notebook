@@ -1,0 +1,10 @@
+abc.java:1: error: class, interface, or enum expected
+Fuck
+^
+abc.java:5: error: not a statement
+ 	Here 
+ 	^
+abc.java:5: error: ';' expected
+ 	Here 
+ 	    ^
+3 errors
