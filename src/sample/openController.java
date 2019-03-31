@@ -82,11 +82,22 @@ public class openController {
             e.printStackTrace();
         }
 
+        String output_string="";
 
+        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Sherrinford\\Documents\\Github\\src\\batch\\error_abc.txt"))) {
+
+            String sCurrentLine;
+            while ((sCurrentLine = br.readLine()) != null) {
+                System.out.println(sCurrentLine);
+                output_string+=sCurrentLine+"\n";
+            }
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
         try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Sherrinford\\Documents\\Github\\src\\batch\\output_abc.txt"))) {
 
             String sCurrentLine;
-            String output_string="";
             while ((sCurrentLine = br.readLine()) != null) {
                 System.out.println(sCurrentLine);
                 output_string+=sCurrentLine+"\n";
@@ -96,5 +107,6 @@ public class openController {
         catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 }
