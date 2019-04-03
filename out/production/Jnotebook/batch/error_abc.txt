@@ -1,7 +1,0 @@
-abc.java:5: error: not a statement
- 	sdfsdf 
- 	^
-abc.java:5: error: ';' expected
- 	sdfsdf 
- 	      ^
-2 errors

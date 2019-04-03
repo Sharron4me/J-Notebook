@@ -1,7 +1,7 @@
 @echo off
-@echo we have started compiling program
+@echo we have started compiling program %1
 cd programs
-javac abc.java > ..\output_abc.txt 2> ..\error_abc.txt && type ..\output_abc.txt || type ..\error_abc.txt
+javac %1.java > ..\output_%1.txt 2> ..\error_%1.txt && type ..\output_%1.txt || type ..\error_%1.txt
 @echo Press Enter to Continue
 PAUSE
 EXIT

@@ -1,0 +1,4 @@
+Helo.java:2: error: class abc is public, should be declared in a file named abc.java
+ public class abc{ 
+        ^
+1 error

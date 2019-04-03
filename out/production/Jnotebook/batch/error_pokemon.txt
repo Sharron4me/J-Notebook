@@ -1,0 +1,4 @@
+pokemon.java:2: error: <identifier> expected
+ public class "+name+"{ 
+             ^
+1 error

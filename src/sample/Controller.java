@@ -1,5 +1,6 @@
 package sample;
 
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -64,10 +65,13 @@ public class Controller {
                     try
 
                     {
-                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("open.fxml"));
-                        Parent root1 = (Parent) fxmlLoader.load();
+                        FXMLLoader fxmlLoad = new FXMLLoader(getClass().getResource("open.fxml"));
+                        System.out.println("Correct Here");
+                        Parent root1 =  FXMLLoader.load(Controller.class.getResource("open.fxml"));
+                        openController openController = fxmlLoad.getController();
+                        openController.setFile_name(file_pro_name.getText());
                         Stage stage = new Stage();
-                        stage.setTitle("second page");
+                        stage.setTitle(String.valueOf(file_pro_name.getText())+".java");
                         stage.setScene(new Scene(root1,900,1000));
                         stage.show();
 
@@ -75,6 +79,7 @@ public class Controller {
                     catch (Exception e)
                     {
                         System.out.println("Something Went Wrong:"+e);
+                        e.printStackTrace();
                     }
                 }
 
@@ -83,6 +88,9 @@ public class Controller {
         }
         catch(SQLException e){
             System.out.println("Something Went Wrong!  "+e);
+
+
+            e.printStackTrace();
         }
 
     }
@@ -121,6 +129,8 @@ public class Controller {
         }
         catch(SQLException e){
             System.out.println("Something Went Wrong!  "+e);
+
+            e.printStackTrace();
         }
     }
 
