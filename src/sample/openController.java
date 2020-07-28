@@ -42,7 +42,7 @@ public class openController implements Initializable
             System.out.println(modules_import.getText()+"\n"+main_code.getText()+"\n"+classes.getText());
             String final_string = modules_import.getText()+ "\n public class "+name+"{ \n \t" + classes.getText()+"\n \t  public static void main(String argv[]) { \n \t"+main_code.getText()+" \n \t } \n }";
             try{
-                FileWriter fw=new FileWriter("C:\\Users\\Sherrinford\\Documents\\Github\\src\\batch\\programs\\"+file_name_java+".java");
+                FileWriter fw=new FileWriter("C:\\Users\\\\Documents\\Github\\src\\batch\\programs\\"+file_name_java+".java");
                 fw.write(final_string);
                 fw.close();
             }
@@ -53,7 +53,7 @@ public class openController implements Initializable
             System.out.println("Success...");
 
             ProcessBuilder pb = new ProcessBuilder("cmd", "/c","Start", "Main.bat",file_name_java);
-            File dir = new File("C:\\Users\\Sherrinford\\Documents\\Github\\src\\batch");
+            File dir = new File("C:\\Users\\\\Documents\\Github\\src\\batch");
             pb.directory(dir);
             Process p = pb.start();
         }
@@ -63,7 +63,7 @@ public class openController implements Initializable
             e.printStackTrace();
         }
 
-        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Sherrinford\\Documents\\Github\\src\\batch\\output_"+file_name_java+".txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\\\Documents\\Github\\src\\batch\\output_"+file_name_java+".txt"))) {
 
             String sCurrentLine;
             String output_string="";
@@ -85,7 +85,7 @@ public class openController implements Initializable
             System.out.println(modules_import.getText()+"\n"+main_code.getText()+"\n"+classes.getText());
             String final_string = modules_import.getText()+ "\n public class "+name+"{ \n \t" + classes.getText()+"\n \t  public static void main(String argv[]) { \n \t"+main_code.getText()+" \n \t } \n }";
             try{
-                FileWriter fw=new FileWriter("C:\\Users\\Sherrinford\\Documents\\Github\\src\\batch\\programs\\"+file_name_java+".java");
+                FileWriter fw=new FileWriter("C:\\Users\\\\Documents\\Github\\src\\batch\\programs\\"+file_name_java+".java");
                 fw.write(final_string);
                 fw.close();
             }
@@ -96,7 +96,7 @@ public class openController implements Initializable
             System.out.println("Success...");
 
             ProcessBuilder pb = new ProcessBuilder("cmd", "/c","Start", "Run_program.bat",file_name_java);
-            File dir = new File("C:\\Users\\Sherrinford\\Documents\\Github\\src\\batch");
+            File dir = new File("C:\\Users\\\\Documents\\Github\\src\\batch");
             pb.directory(dir);
             Process p = pb.start();
         }
@@ -108,7 +108,7 @@ public class openController implements Initializable
 
         String output_string="";
 
-        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Sherrinford\\Documents\\Github\\src\\batch\\error_"+file_name_java+".txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\\\Documents\\Github\\src\\batch\\error_"+file_name_java+".txt"))) {
 
             String sCurrentLine;
             while ((sCurrentLine = br.readLine()) != null) {
@@ -119,7 +119,7 @@ public class openController implements Initializable
         catch (IOException e) {
             e.printStackTrace();
         }
-        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Sherrinford\\Documents\\Github\\src\\batch\\output_"+file_name_java+".txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\\\Documents\\Github\\src\\batch\\output_"+file_name_java+".txt"))) {
 
             String sCurrentLine;
             while ((sCurrentLine = br.readLine()) != null) {
